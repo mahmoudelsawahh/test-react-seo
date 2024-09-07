@@ -1,1 +1,1488 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.f792f619.js"></script><link href="/static/css/main.77b2a4ea.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#000000" name="theme-color">
+    <meta content="Web site created using create-react-app" name="description">
+    <meta content="mahmoud elsawah" name="author">
+    <meta content="used car prices,used car,used cars,used car dealer,used car dealer auctions,car market,used car market,car questions answered,used car with loan,car,used car review,car prices,used car for sale,second hand car,used car in kerala,low budget used car,budget rate used car,new car prices,used cars for sale,used cars in delhi,car buying tips,new car,used car cng,used suv,car auctions,used car basti,best used cars,used car rivew,
+    auto usate,auto,auto usata,auto usate sotto i 5000,auto usate sotto i 10000 euro,chilometri reali auto usata,auto usate 2022,auto usate 2023,auto usate 2020,bolla auto usate,auto usate km veri,prezzi auto usate,valore auto usate,auto usate italia,auto usate subito,auto usate offerte,auto usate km reali,mercato auto usate,auto usate privati,vendere auto usate,auto usate consigli,auto usate germania,auto usate migliori,usate,auto usate svizzera
+    occasion,véhicule d'occasion,voiture d'occasion,voiture occasion,achat véhicule doccasion,comment bien acheter un véhicule d'occasion,inspection véhicule occasion,véhicules,achat occasion,d'occasion,voitures d'occasion,voitures d'occasion pas cheres,quelle voiture d'occasion,voitures doccasion,#occasion,auto occasion,véhicule,guide occasion,bien acheter voiture d'occasion,voiture doccasion,hybride occasion,voiture d occasion,hausse prix occasion
+    , auto usate a roma, used car in roma , roma auto usate , auto usate in italia , used cars in italy , cars , automotive  , vehicle , veicolo , raysin , raysin car srls , car used car , Per auto usate , auto usate, Per auto usate a Roma
+    " name="keywords">
+    <link href="/manifest.json" rel="manifest">
+    <title>raysin car srls - auto usate a roma</title>
+    <meta content="Raysin car srls è una start-up che è stata aperta nel 2023 e ha PARTITA IVA:17053311001 specializzata nella compravendita di auto usate, con sede a Roma. non è solo un'azienda con una vasta gamma di auto usate. È un servizio che rende l'acquisto di auto sicuro e veloce: puoi avere i veicoli di cui hai bisogno in stock in pochi giorni. Ti offriamo anche il servizio di permuta della tua vecchia auto con una nuova Sarebbe più facile contattare l'azienda al numero (+0039)3779452678 " name="description" data-rh="true">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://cdn.contentful.com" rel="preconnect">
+    <link href="http://images.ctfassets.net" rel="preconnect">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap);
+
+      @-webkit-keyframes swiper-preloader-spin {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0)
+        }
+
+        to {
+          -webkit-transform: rotate(1turn);
+          transform: rotate(1turn)
+        }
+      }
+
+      @keyframes swiper-preloader-spin {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0)
+        }
+
+        to {
+          -webkit-transform: rotate(1turn);
+          transform: rotate(1turn)
+        }
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      #root,
+      * {
+        margin: 0;
+        padding: 0
+      }
+
+      #root,
+      .layout,
+      body {
+        height: 100vh;
+        width: 100%
+      }
+
+      #root,
+      body {
+        background-color: #fff !important
+      }
+
+      .layout {
+        display: grid;
+        grid-template-areas: "header""main";
+        grid-template-rows: auto 1fr auto;
+        position: relative
+      }
+
+      .first-banner,
+      main {
+        height: 100%;
+        width: 100%
+      }
+
+      main {
+        grid-area: main
+      }
+
+      a {
+        text-decoration: none
+      }
+
+      a.active button {
+        background-color: #fff;
+        color: coral;
+        font-weight: 700
+      }
+
+      a.active button:hover {
+        background-color: #efebe9
+      }
+
+      .first-banner {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2
+      }
+
+      section {
+        padding: 25px 0
+      }
+
+      button a {
+        color: #fff
+      }
+
+      header {
+        grid-area: header
+      }
+
+      .flexBox,
+      .socialMedia {
+        align-items: center;
+        display: flex
+      }
+
+      .lazy-load-image-background.blur {
+        -webkit-filter: blur(15px);
+        filter: blur(15px)
+      }
+
+      .lazy-load-image-background.blur.lazy-load-image-loaded {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        transition: filter .3s;
+        transition: filter .3s, -webkit-filter .3s
+      }
+
+      .lazy-load-image-background.blur>img {
+        opacity: 0
+      }
+
+      .lazy-load-image-background.blur.lazy-load-image-loaded>img {
+        opacity: 1;
+        transition: opacity .3s
+      }
+
+      .socialMedia {
+        justify-content: space-around
+      }
+
+      .swiper,
+      .swiper-wrapper {
+        position: relative;
+        z-index: 1
+      }
+
+      .swiper {
+        display: block;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding: 0
+      }
+
+      .swiper-wrapper {
+        box-sizing: initial;
+        display: flex;
+        height: 100%;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        transition-timing-function: ease;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+      }
+
+      .swiper-horizontal {
+        touch-action: pan-y
+      }
+
+      .swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        width: 100%
+      }
+
+      .swiper-backface-hidden .swiper-slide {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+      }
+
+      .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+        -webkit-animation: swiper-preloader-spin 1s linear infinite;
+        animation: swiper-preloader-spin 1s linear infinite
+      }
+
+      .swiper-free-mode>.swiper-wrapper {
+        margin: 0 auto;
+        transition-timing-function: ease-out
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        text-align: center;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        transition: opacity .3s;
+        z-index: 10
+      }
+
+      .swiper-horizontal>.swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 8px;
+        bottom: var(--swiper-pagination-bottom, 8px);
+        left: 0;
+        top: auto;
+        top: var(--swiper-pagination-top, auto);
+        width: 100%
+      }
+
+      .swiper-pagination-bullet {
+        background: #000;
+        background: var(--swiper-pagination-bullet-inactive-color, #000);
+        border-radius: 50%;
+        border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+        display: inline-block;
+        height: 8px;
+        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+        opacity: .2;
+        opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+        width: 8px;
+        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px))
+      }
+
+      .swiper-pagination-clickable .swiper-pagination-bullet {
+        cursor: pointer
+      }
+
+      .swiper-pagination-bullet:only-child {
+        display: none !important
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--swiper-theme-color);
+        background: var(--swiper-pagination-color, var(--swiper-theme-color));
+        opacity: 1;
+        opacity: var(--swiper-pagination-bullet-opacity, 1)
+      }
+
+      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 4px;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px)
+      }
+
+      body {
+        background: #eee
+      }
+
+      .swiper-slide {
+        align-items: center;
+        background: #fff;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        text-align: center
+      }
+
+      .swiper-slide img {
+        object-fit: cover;
+        display: block
+      }
+
+      .swiper-fade .swiper-slide {
+        pointer-events: none;
+        transition-property: opacity
+      }
+
+      .swiper-fade .swiper-slide-active {
+        pointer-events: auto
+      }
+
+      body,
+      html {
+        height: 100%;
+        position: relative
+      }
+
+      body {
+        color: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0
+      }
+
+      .swiper,
+      .swiper-slide img {
+        height: 100%;
+        width: 100%
+      }
+
+      .swiper-slide {
+        background-position: 50%;
+        background-size: cover
+      }
+    </style>
+    <noscript>
+      <link href="/static/css/main.a68ae870.css" rel="stylesheet">
+    </noscript>
+    <link href="/static/css/main.a68ae870.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <script defer="defer" src="/static/js/main.bc25d47a.js"></script>
+  </head>
+  <body>
+    <noscript>Raysin car srls for used car</noscript>
+    <div id="root" style="display: none;">
+        <div class="layout MuiBox-root css-0">
+          <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-zxvor2">
+            <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+              <div class="MuiBox-root css-1cesvzf">
+                <div class="flexBox MuiBox-root css-0">
+                  <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-pqwghu" tabindex="0" type="button">
+                    <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                      <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="PlaceIcon" focusable="false" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                      </svg>
+                    </span>
+                    <a href="https://www.google.com/maps?ll=41.873017,12.579624&z=17&t=m&hl=en&gl=EG&mapclient=embed&q=Viale+della+Bella+Villa+Roma+RM+Italy" title="this is link for location raysin car srls">VIALE DELLA BELLA VILLA 68 ROMA Cap 00172</a>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                  <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1q1bs3h" tabindex="0" type="button">
+                    <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                      <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="PhoneIcon" focusable="false" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                      </svg>
+                    </span>
+                    <a href="tel:+00393779452678" title="this is link for call raysin car srls">(+0039)3779452678</a>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                  <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1q1bs3h" tabindex="0" type="button">
+                    <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                      <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="ApartmentIcon" focusable="false" viewBox="0 0 24 24">
+                        <path d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm4 4H9v-2h2v2zm0-4H9V9h2v2zm0-4H9V5h2v2zm4 8h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"></path>
+                      </svg>
+                    </span>17053311001 <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                  <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1ehjxip" tabindex="0" type="button">
+                    <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                      <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="MailIcon" focusable="false" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+                      </svg>
+                    </span>
+                    <a href="mailto:support@raysincar.com">support@raysincar.com</a>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                </div>
+                <div class="flexBox MuiBox-root css-0">
+                  <a href="https://web.facebook.com/" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" aria-label="FacebookIcon">
+                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="FacebookIcon" focusable="false" viewBox="0 0 24 24">
+                      <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path>
+                    </svg>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </a>
+                  <a href="https://www.instagram.com/raysin_car_srls" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" aria-label="InstagramIcon">
+                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="InstagramIcon" focusable="false" viewBox="0 0 24 24">
+                      <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                    </svg>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </a>
+                  <a href="https://twitter.com/raysin_car_srls" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" aria-label="TwitterIcon">
+                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="TwitterIcon" focusable="false" viewBox="0 0 24 24">
+                      <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path>
+                    </svg>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="MuiToolbar-root MuiToolbar-regular css-12o98wt">
+                <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABBCAYAAABW168KAAAACXBIWXMAAC4jAAAuIwF4pT92AAAKmmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuYTg3MzFiOSwgMjAyMS8wOS8wOS0wMDozNzozOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wNi0wMlQxNzowMjoxNiswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M2UxMjBkN2ItODAxOS04ZTQzLWI0NzYtMDJiYmUwZjRiNTk4IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MGY5Nzc1ZjctZmExYy0xYTQ2LWI0ZDItYTQzMzM0Njk2ZjY2IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YjQ3Nzk5NTctYzQ4My01NTRmLThiMjgtMGMwYTU1MWM0OGM5IiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSIzMDAwMDAwLzEwMDAwIiB0aWZmOllSZXNvbHV0aW9uPSIzMDAwMDAwLzEwMDAwIiB0aWZmOlJlc29sdXRpb25Vbml0PSIyIiBleGlmOkNvbG9yU3BhY2U9IjEiIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSIxNjAiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSI2NSI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjQ3Nzk5NTctYzQ4My01NTRmLThiMjgtMGMwYTU1MWM0OGM5IiBzdEV2dDp3aGVuPSIyMDIzLTA2LTAyVDE3OjAyOjE2KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMCAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjhlNjRmNDg5LWI3MmMtZGQ0My1hOThlLTM5OTNiODM5MDFhMiIgc3RFdnQ6d2hlbj0iMjAyMy0wNi0wMlQxNzoxMToyMiswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjAgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzc1NWI0Zi0wZGRhLTQxNGMtYjExNy03YTgzMzdhZGM4YmIiIHN0RXZ0OndoZW49IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6M2UxMjBkN2ItODAxOS04ZTQzLWI0NzYtMDJiYmUwZjRiNTk4IiBzdEV2dDp3aGVuPSIyMDIzLTA2LTAyVDE3OjEyOjEzKzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjIzNzU1YjRmLTBkZGEtNDE0Yy1iMTE3LTdhODMzN2FkYzhiYiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM5OGI1ZDZkLTQyNzQtNjM0OC05MzI3LWEwMjIyYTg4ZTRlMiIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmI0Nzc5OTU3LWM0ODMtNTU0Zi04YjI4LTBj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" alt="raysin car logo" width="150" height="60" style="margin-top:5px;cursor:pointer" title="raysin car srls ">
+                </span>
+                <div class="MuiBox-root css-1md1nwn">
+                  <div class="MuiBox-root css-1m3gloj">
+                    <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-1l1167e" tabindex="0" type="button" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" aria-hidden="false">
+                      <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="MenuIcon" focusable="false" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                      </svg>
+                      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="MuiBox-root css-i9gxme">
+                  <div class="MuiBox-root css-1pfxk8q">
+                    <a href="/" class="active" aria-current="page">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium css-f38zn5" tabindex="0" type="button">
+                        <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                          <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="HomeIcon" focusable="false" viewBox="0 0 24 24">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                          </svg>
+                        </span>
+                        <span style="margin-right:10px">principale</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </a>
+                    <a href="/about-us" class="">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium css-f38zn5" tabindex="0" type="button">
+                        <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                          <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="AccessibilityNewIcon" focusable="false" viewBox="0 0 24 24">
+                            <path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
+                          </svg>
+                        </span>
+                        <span style="margin-right:10px">chi siamo</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </a>
+                    <a href="/service" class="">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium css-f38zn5" tabindex="0" type="button">
+                        <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                          <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="MiscellaneousServicesIcon" focusable="false" viewBox="0 0 24 24">
+                            <path d="m14.17 13.71 1.4-2.42c.09-.15.05-.34-.08-.45l-1.48-1.16c.03-.22.05-.45.05-.68s-.02-.46-.05-.69l1.48-1.16c.13-.11.17-.3.08-.45l-1.4-2.42c-.09-.15-.27-.21-.43-.15l-1.74.7c-.36-.28-.75-.51-1.18-.69l-.26-1.85c-.03-.16-.18-.29-.35-.29h-2.8c-.17 0-.32.13-.35.3L6.8 4.15c-.42.18-.82.41-1.18.69l-1.74-.7c-.16-.06-.34 0-.43.15l-1.4 2.42c-.09.15-.05.34.08.45l1.48 1.16c-.03.22-.05.45-.05.68s.02.46.05.69l-1.48 1.16c-.13.11-.17.3-.08.45l1.4 2.42c.09.15.27.21.43.15l1.74-.7c.36.28.75.51 1.18.69l.26 1.85c.03.16.18.29.35.29h2.8c.17 0 .32-.13.35-.3l.26-1.85c.42-.18.82-.41 1.18-.69l1.74.7c.16.06.34 0 .43-.15zM8.81 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm13.11 7.67-.96-.74c.02-.14.04-.29.04-.44 0-.15-.01-.3-.04-.44l.95-.74c.08-.07.11-.19.05-.29l-.9-1.55c-.05-.1-.17-.13-.28-.1l-1.11.45c-.23-.18-.48-.33-.76-.44l-.17-1.18c-.01-.12-.11-.2-.21-.2h-1.79c-.11 0-.21.08-.22.19l-.17 1.18c-.27.12-.53.26-.76.44l-1.11-.45c-.1-.04-.22 0-.28.1l-.9 1.55c-.05.1-.04.22.05.29l.95.74c-.02.14-.03.29-.03.44 0 .15.01.3.03.44l-.95.74c-.08.07-.11.19-.05.29l.9 1.55c.05.1.17.13.28.1l1.11-.45c.23.18.48.33.76.44l.17 1.18c.02.11.11.19.22.19h1.79c.11 0 .21-.08.22-.19l.17-1.18c.27-.12.53-.26.75-.44l1.12.45c.1.04.22 0 .28-.1l.9-1.55c.06-.09.03-.21-.05-.28zm-4.29.16c-.74 0-1.35-.6-1.35-1.35s.6-1.35 1.35-1.35 1.35.6 1.35 1.35-.61 1.35-1.35 1.35z"></path>
+                          </svg>
+                        </span>
+                        <span style="margin-right:10px">Servizi</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </a>
+                    <a href="/used-cars" class="">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium css-f38zn5" tabindex="0" type="button">
+                        <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                          <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="TimeToLeaveIcon" focusable="false" viewBox="0 0 24 24">
+                            <path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"></path>
+                          </svg>
+                        </span>
+                        <span style="margin-right:10px">Cerca un'auto</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </a>
+                    <a href="/contact" class="">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSuccess MuiButton-sizeMedium MuiButton-textSizeMedium css-f38zn5" tabindex="0" type="button">
+                        <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                          <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="ContactPageIcon" focusable="false" viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-2 8c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8H8v-.57c0-.81.48-1.53 1.22-1.85.85-.37 1.79-.58 2.78-.58.99 0 1.93.21 2.78.58.74.32 1.22 1.04 1.22 1.85V18z"></path>
+                          </svg>
+                        </span>
+                        <span style="margin-right:10px">chiamaci</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="MuiBox-root css-6k8fz8">
+                  <div class="MuiBox-root css-0">
+                    <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-xdpyms" tabindex="0" type="button" aria-haspopup="true">
+                      <div class="flag size-l border border-radius">
+                        <img src="/static/media/oKiMbXjD.125c01cf19e27b9e2e47e906db4161a3.svg">
+                      </div>
+                      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    </button>
+                    <div class="MuiBox-root css-0"></div>
+                  </div>
+                  <div class="MuiBox-root css-1rb0nos">
+                    <div class="MuiBox-root css-15poin4">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-2pjunf" tabindex="0" type="button">
+                        <div class="flag size-l border border-radius">
+                          <img src="/static/media/bmKkjAbp.8ab33c3a727b6074114cea6e500910a8.svg">
+                        </div>
+                        <span class="MuiTypography-root MuiTypography-a css-h8t4i6">english</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </div>
+                    <div class="MuiBox-root css-15poin4">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-2pjunf" tabindex="0" type="button">
+                        <div class="flag size-l border border-radius">
+                          <img src="/static/media/oKiMbXjD.125c01cf19e27b9e2e47e906db4161a3.svg">
+                        </div>
+                        <span class="MuiTypography-root MuiTypography-a css-h8t4i6">italy</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </div>
+                    <div class="MuiBox-root css-15poin4">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-2pjunf" tabindex="0" type="button">
+                        <div class="flag size-l border border-radius">
+                          <img src="/static/media/eOMUlSrC.3130e92fa0575daa1d54ebae5d309fe0.svg">
+                        </div>
+                        <span class="MuiTypography-root MuiTypography-a css-h8t4i6">franca</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </div>
+                    <div class="MuiBox-root css-15poin4">
+                      <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-2pjunf" tabindex="0" type="button">
+                        <div class="flag size-l border border-radius">
+                          <img src="/static/media/eQzfSdkP.5596ec6e6458e11e1a41a12e1f90665e.svg">
+                        </div>
+                        <span class="MuiTypography-root MuiTypography-a css-h8t4i6">Arabic</span>
+                        <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="MuiBox-root css-1ninoqa">
+              <div class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress mySwiper swiper-backface-hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width:3.35544e+07px;opacity:1;transform:translate3d(0,0,0)">
+                    <div class="first-banner MuiBox-root css-mii7c0">
+                      <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                        <div class="MuiBox-root css-zidp4y">
+                          <h4 class="MuiTypography-root MuiTypography-h4 css-1i2078g">Benvenuti al Raysin Motor Show</h4>
+                          <h1 class="MuiTypography-root MuiTypography-h1 css-17nkzhq">Il modo migliore per trovare l'auto dei tuoi sogni</h1>
+                          <p class="MuiTypography-root MuiTypography-body2 css-1qttvz8">Semplifica l'acquisto e la vendita di auto, Raysin Car Srls è il modo più semplice per vendere o acquistare una nuova auto. non esitate a chiamarci</p>
+                          <div class="MuiBox-root css-5umetb">
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1hmazqc" tabindex="0" type="button" title="auto usate">Trova un'auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1ap3ts" tabindex="0" type="button" title="Contattaci">Contattaci <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width:3.35544e+07px;opacity:1.19209e-07;transform:translate3d(-3.35544e+07px,0,0)">
+                    <div class="first-banner MuiBox-root css-guty8g">
+                      <div class="MuiContainer-root MuiContainer-maxWidthLg css-1t2logc">
+                        <div class="MuiBox-root css-12m2ou8">
+                          <h1 class="MuiTypography-root MuiTypography-h1 css-hwgnyb">Acquisto auto <br>con garanzia </h1>
+                          <p class="MuiTypography-root MuiTypography-body2 css-1am8ep1">non rischi nulla, garantiamo che l'auto è conforme alla descrizione tecnica</p>
+                          <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-bjln8a" tabindex="0" type="button" title="scoprire Raysin Car srls per auto usate">Scopri di più <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width:3.35544e+07px;opacity:0;transform:translate3d(-3.35544e+07px,0,0)">
+                    <div class="first-banner MuiBox-root css-y4ijnd">
+                      <div class="MuiContainer-root MuiContainer-maxWidthLg css-1t2logc">
+                        <div class="MuiBox-root css-12m2ou8">
+                          <h1 class="MuiTypography-root MuiTypography-h1 css-ucsets">Acquista e vendi le ultime auto usate ai prezzi più equi.</h1>
+                          <p class="MuiTypography-root MuiTypography-body2 css-y04zl4">Autovetture, furgoni, autocarri leggeri e persino auto marginali o veicoli danneggiati, troverai sicuramente quello che stai cercando.</p>
+                          <div class="MuiBox-root css-10stmjk">
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-138ob3b" tabindex="0" type="button" title="numero di telefono per auto usate">
+                              <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="PhoneIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                                </svg>
+                              </span>(+0039)3779452678 <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-jqzuhe" tabindex="0" type="button" title="raysin car srls gmail">
+                              <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="EmailIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+                                </svg>
+                              </span>chiamaci <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                  <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                </div>
+              </div>
+              <div class="MuiBox-root css-afkkjk">
+                <section style="background-color:rgba(247,247,247,.59)">
+                  <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                    <div class="MuiBox-root css-1ggmzjh">
+                      <img src="/static/media/bmw.3669607a23bd4a85218af5c2cc9a1151.svg" alt="bmw" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/fiat.0efe6f4da00e81e7a952ceaf03f73cca.svg" alt="fiat" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Group-200.a61529f26497f0b696ff626cfd2585a5.svg" alt="auto usata" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Group-203.6a0b4004bab172c769c587b1c12541db.svg" alt="auto usata" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Group-206.51eb213bbcb30a6eb62147f9d23d961c.svg" alt="auto usata" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Group-208.25b99dc17d945d3acfb49b3c41e6270f.svg" alt="auto usata" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Group-209.f77a339507ccc793857787a76eac1248.svg" alt="auto usata" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/hyundai.8afbd3ac80b119cb63f1fa9146e28811.svg" alt="hyundai" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/land-rover.001337fc4904c61c0505e6bfc80bea8f.svg" alt="landRover" width="50px" loading="lazy" height="auto">
+                      <img src="/static/media/Lancer.e0117e9dd64333e010a22a655d95bce2.svg" alt="Lancer" width="50px" loading="lazy" height="auto">
+                    </div>
+                    <div class="MuiBox-root css-1njrl3e">
+                      <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                        <img src="/static/media/bmw.3669607a23bd4a85218af5c2cc9a1151.svg" alt="bmw">
+                      </span>
+                      <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                        <img src="/static/media/fiat.0efe6f4da00e81e7a952ceaf03f73cca.svg" alt="fiat">
+                      </span>
+                      <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                        <img src="/static/media/hyundai.8afbd3ac80b119cb63f1fa9146e28811.svg" alt="hyundai">
+                      </span>
+                      <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                        <img src="/static/media/land-rover.001337fc4904c61c0505e6bfc80bea8f.svg" alt="landRover">
+                      </span>
+                      <span class="lazy-load-image-background blur lazy-load-image-loaded" style="color:transparent;display:inline-block">
+                        <img src="/static/media/Lancer.e0117e9dd64333e010a22a655d95bce2.svg" alt="Lancer">
+                      </span>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="MuiBox-root css-sxjqc9">
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                      <div class="MuiBox-root css-1vr2anf">
+                        <p class="MuiTypography-root MuiTypography-body1 css-rd6bpt">benvenuto in Raysin Car Srls</p>
+                        <h1 class="MuiTypography-root MuiTypography-h1 css-100cmzb">CHI SIAMO Raysin Car Srls</h1>
+                        <hr>
+                        <p class="MuiTypography-root MuiTypography-body1 css-1vd7uv4">Raysin car srls è una start-up che è stata aperta nel 2023 e ha PARTITA IVA:17053311001 specializzata nella compravendita di auto usate, con sede a Roma.</p>
+                      </div>
+                      <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1u97qtp">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-s1j4et">
+                          <div class="MuiBox-root css-xi606m">
+                            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1qcnm2y" tabindex="0" type="button" title="Contattaci" aria-label="fingerprint">
+                              <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="CarCrashIcon" focusable="false" viewBox="0 0 24 24">
+                                <path d="M18 1c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm.5 6h-1V3h1v4zm0 1v1h-1V8h1zm-.59 5c.06.16.09.33.09.5 0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5c0-.39.15-.74.39-1.01-1.63-.66-2.96-1.91-3.71-3.49H5.81l1.04-3H11c0-.69.1-1.37.29-2H6.5c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-6.68c-1.05.51-2.16.69-3.09.68zM7.5 15c-.83 0-1.5-.67-1.5-1.5S6.67 12 7.5 12s1.5.67 1.5 1.5S8.33 15 7.5 15z"></path>
+                              </svg>
+                              <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-1mde1fn">Vendi auto</h1>
+                            <p class="MuiTypography-root MuiTypography-body1 css-d8ju1k">Vendi la tua auto il più velocemente possibile e al prezzo più alto</p>
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-s1j4et">
+                          <div class="MuiBox-root css-xi606m">
+                            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1qcnm2y" tabindex="0" type="button" title="Contattaci" aria-label="fingerprint">
+                              <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="SupportAgentIcon" focusable="false" viewBox="0 0 24 24">
+                                <path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path>
+                                <circle cx="9" cy="13" r="1"></circle>
+                                <circle cx="15" cy="13" r="1"></circle>
+                                <path d="M18 11.03C17.52 8.18 15.04 6 12.05 6c-3.03 0-6.29 2.51-6.03 6.45 2.47-1.01 4.33-3.21 4.86-5.89 1.31 2.63 4 4.44 7.12 4.47z"></path>
+                              </svg>
+                              <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-1mde1fn">Compra auto</h1>
+                            <p class="MuiTypography-root MuiTypography-body1 css-d8ju1k">Puoi scoprire i dettagli delle auto disponibili attraverso il sito Web e quindi contattarci</p>
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-s1j4et">
+                          <div class="MuiBox-root css-xi606m">
+                            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1qcnm2y" tabindex="0" type="button" title="Contattaci" aria-label="fingerprint">
+                              <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="CarRentalIcon" focusable="false" viewBox="0 0 24 24">
+                                <path d="M16.39 9H7.61c-.43 0-.81.28-.95.68l-1.66 5v6.81c0 .29.23.51.5.51h1c.28 0 .5-.22.5-.5V20h10v1.5c0 .28.22.5.5.5h1c.28 0 .5-.22.5-.5v-6.81l-1.66-5c-.14-.41-.52-.69-.95-.69zm-8.61 9c-.68 0-1.22-.54-1.22-1.22s.54-1.22 1.22-1.22S9 16.11 9 16.78 8.46 18 7.78 18zm8.44 0c-.67 0-1.22-.54-1.22-1.22s.54-1.22 1.22-1.22 1.22.54 1.22 1.22S16.9 18 16.22 18zm-9.93-4 1.33-4h8.78l1.33 4H6.29zm4.54-11C10.41 1.83 9.3 1 8 1 6.34 1 5 2.34 5 4c0 1.65 1.34 3 3 3 1.3 0 2.41-.84 2.83-2H16v2h2V5h1V3h-8.17zM8 5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path>
+                              </svg>
+                              <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-1mde1fn">Contattaci</h1>
+                            <p class="MuiTypography-root MuiTypography-body1 css-d8ju1k">Possiamo trovare un'auto usata secondo le vostre specifiche.</p>
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-3 css-s1j4et">
+                          <div class="MuiBox-root css-xi606m">
+                            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1qcnm2y" tabindex="0" type="button" title="Contattaci" aria-label="fingerprint">
+                              <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="EuroIcon" focusable="false" viewBox="0 0 24 24">
+                                <path d="M15 18.5c-2.51 0-4.68-1.42-5.76-3.5H15l1-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15l1-2H9.24C10.32 6.92 12.5 5.5 15 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3C19.41 3.87 17.3 3 15 3c-3.92 0-7.24 2.51-8.48 6H3l-1 2h4.06c-.04.33-.06.66-.06 1s.02.67.06 1H3l-1 2h4.52c1.24 3.49 4.56 6 8.48 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57z"></path>
+                              </svg>
+                              <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-1mde1fn">Velocità</h1>
+                            <p class="MuiTypography-root MuiTypography-body1 css-d8ju1k">Compri auto online e risparmi tempo.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="first-banner MuiBox-root css-1witiez">
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                      <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-10 css-12ikp2y">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                          <div class="MuiBox-root css-0">
+                            <div class="MuiBox-root css-oiaaz2">
+                              <div class="MuiBox-root css-0">
+                                <span class="" style="display:inline-block;width:100%"></span>
+                              </div>
+                              <div class="MuiBox-root css-77bmz0">
+                                <span class="" style="display:inline-block;width:100%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                          <div class="MuiBox-root css-0">
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-8unpez">Cosa Ci Rende <span style="color:#5d4037">Speciali</span>
+                            </h1>
+                            <hr color="#555555" style="width:30%;margin:25px 0">
+                            <p class="MuiTypography-root MuiTypography-body1 css-dlkwta">Raysin Car srls non è solo un'azienda con una vasta gamma di auto usate. È un servizio che rende l'acquisto di auto sicuro e veloce: puoi avere i veicoli di cui hai bisogno in stock in pochi giorni. Ti offriamo anche il servizio di permuta della tua vecchia auto con una nuova Sarebbe più facile contattare l'azienda al numero (+0039)3779452678</p>
+                            <div class="MuiBox-root css-cyc7w5">
+                              <div class="MuiBox-root css-d2ade2">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-colorSuccess MuiSvgIcon-fontSizeMedium css-l85wjk" data-testid="CheckCircleIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1jsp61h">Siamo qui quando hai bisogno di noi</p>
+                              </div>
+                              <div class="MuiBox-root css-d2ade2">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-colorSuccess MuiSvgIcon-fontSizeMedium css-l85wjk" data-testid="CheckCircleIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1jsp61h">Auto sopra la media, prezzi sotto la media</p>
+                              </div>
+                              <div class="MuiBox-root css-d2ade2">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-colorSuccess MuiSvgIcon-fontSizeMedium css-l85wjk" data-testid="CheckCircleIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1jsp61h">Abbiamo mantenuto i costi al minimo</p>
+                              </div>
+                              <div class="MuiBox-root css-d2ade2">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-colorSuccess MuiSvgIcon-fontSizeMedium css-l85wjk" data-testid="CheckCircleIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1jsp61h">Vendi la tua auto senza fatica</p>
+                              </div>
+                            </div>
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1f2wcmo" tabindex="0" type="button" title="raysin car srls">Per saperne di più <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="MuiBox-root css-jcym6u">
+                    <div class="MuiGrid-root MuiGrid-container css-ob9osp">
+                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                        <div class="MuiBox-root css-1kawkq4"></div>
+                      </div>
+                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                        <div class="MuiBox-root css-1vh1f6n">
+                          <h1 class="MuiTypography-root MuiTypography-h1 css-zgadlo">BMW x5 2017</h1>
+                          <p class="MuiTypography-root MuiTypography-body1 css-1ff7jdk">Ottieni la BMW che hai sempre desiderato</p>
+                          <strong style="color:green;font-size:60px;margin-top:15px">€ 4500</strong>
+                          <p class="MuiTypography-root MuiTypography-body1 css-1iii0sl">12.5 % di sconto!</p>
+                          <p class="MuiTypography-root MuiTypography-body1 css-1ykh2sj">OFFERTA LIMITATA! !</p>
+                          <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium css-1tha962" tabindex="0" type="button" title="auto usata">PER SAPERNE DI PIÙ <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="MuiBox-root css-e5h9f6">
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                      <div class="MuiGrid-root MuiGrid-container css-2m3qbh">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-a1gx9m">
+                          <div class="MuiBox-root css-d47f85">
+                            <img src="/static/media/istockphoto-1150425295-170667a.de4adb08ec6eb6255df6.webp" alt="car" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                          <div class="MuiBox-root css-jipda8">
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-3s9me9">Cosa offriamo ?</h1>
+                            <hr color="#555555" style="width:30%;margin:25px 0">
+                            <div class="MuiBox-root css-1d48548">
+                              <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1nhly9" tabindex="0" type="button" title="Cosa offriamo" aria-label="fingerprint">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="DirectionsCarIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path>
+                                </svg>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                              <div class="MuiBox-root css-ayjdwh">
+                                <h6 class="MuiTypography-root MuiTypography-h6 css-5e8vft">Cosa guadagni</h6>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1ep99u7">Con Raysin Car Srls farai il miglior acquisto di auto usate possibile</p>
+                              </div>
+                            </div>
+                            <div class="MuiBox-root css-1d48548">
+                              <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1nhly9" tabindex="0" type="button" title="Cosa offriamo" aria-label="fingerprint">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="SellIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="m21.41 11.41-8.83-8.83c-.37-.37-.88-.58-1.41-.58H4c-1.1 0-2 .9-2 2v7.17c0 .53.21 1.04.59 1.41l8.83 8.83c.78.78 2.05.78 2.83 0l7.17-7.17c.78-.78.78-2.04-.01-2.83zM6.5 8C5.67 8 5 7.33 5 6.5S5.67 5 6.5 5 8 5.67 8 6.5 7.33 8 6.5 8z"></path>
+                                </svg>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                              <div class="MuiBox-root css-ayjdwh">
+                                <h6 class="MuiTypography-root MuiTypography-h6 css-5e8vft">Come funziona</h6>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1ep99u7">Trova l'auto giusta per te. Allora chiamaci al (+0039) 3779452678</p>
+                              </div>
+                            </div>
+                            <div class="MuiBox-root css-1d48548">
+                              <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1nhly9" tabindex="0" type="button" title="Cosa offriamo" aria-label="fingerprint">
+                                <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-dituub" data-testid="PublishedWithChangesIcon" focusable="false" viewBox="0 0 24 24">
+                                  <path d="m17.66 9.53-7.07 7.07-4.24-4.24 1.41-1.41 2.83 2.83 5.66-5.66 1.41 1.41zM4 12c0-2.33 1.02-4.42 2.62-5.88L9 8.5v-6H3l2.2 2.2C3.24 6.52 2 9.11 2 12c0 5.19 3.95 9.45 9 9.95v-2.02c-3.94-.49-7-3.86-7-7.93zm18 0c0-5.19-3.95-9.45-9-9.95v2.02c3.94.49 7 3.86 7 7.93 0 2.33-1.02 4.42-2.62 5.88L15 15.5v6h6l-2.2-2.2c1.96-1.82 3.2-4.41 3.2-7.3z"></path>
+                                </svg>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                              <div class="MuiBox-root css-ayjdwh">
+                                <h6 class="MuiTypography-root MuiTypography-h6 css-5e8vft">Cerca auto su richiesta</h6>
+                                <p class="MuiTypography-root MuiTypography-body1 css-1ep99u7">Possiamo trovare un'auto usata secondo le tue specifiche quando ci contatti</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="first-banner MuiBox-root css-yrbux7">
+                    <div class="MuiContainer-root MuiContainer-maxWidthMd css-usnh75">
+                      <div class="MuiBox-root css-10j03n">
+                        <h1 class="MuiTypography-root MuiTypography-h1 css-1pui5y8">Stai cercando di vendere rapidamente la tua auto online, sei nel posto giusto!</h1>
+                        <p class="MuiTypography-root MuiTypography-body2 css-jrs5ji">Se ti stai chiedendo come vendere la tua auto, siamo qui per aiutarti a trovare il modo ideale per massimizzare il ritorno per il tuo veicolo attuale.</p>
+                        <div class="MuiBox-root css-0">
+                          <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-ujsdm7" tabindex="0" type="button">
+                            <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                              <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="ContactMailIcon" focusable="false" viewBox="0 0 24 24">
+                                <path d="M21 8V7l-3 2-3-2v1l3 2 3-2zm1-5H2C.9 3 0 3.9 0 5v14c0 1.1.9 2 2 2h20c1.1 0 1.99-.9 1.99-2L24 5c0-1.1-.9-2-2-2zM8 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H2v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1zm8-6h-8V6h8v6z"></path>
+                              </svg>
+                            </span>Invia ora la tua auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-13tqxrv">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-free-mode mySwiper swiper-backface-hidden">
+                      <div class="swiper-wrapper" style="transition-duration:0s;transform:translate3d(0,0,0)">
+                        <div class="swiper-slide swiper-slide-active" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Convertible</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Convertible-car.55f2b2cb8f787b0d018b.webp" alt="Convertible" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">coube</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/coube-car.b67ec75e36308bb4b992.webp" alt="coube" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Minivan</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Minivan-car_27_11zon.8c93730a89b51d682fc4.webp" alt="Minivan" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Pickups</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Pickups-car_28_11zon.66a32ed6811f74062c0b.webp" alt="Pickups" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Sedan</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Sedan-car_30_11zon.8e4b873fd815649f758e.webp" alt="Sedan" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Sport</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Sport Cars_42_11zon.e3eeeccb4732f2dd5664.webp" alt="Sport" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">SUV</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/SUV-car_34_11zon.b0c8a30e836c8bd14db3.webp" alt="SUV" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:6.71089e+06px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-1emqnyn">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">hatchback</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>Trova auto <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/hatchback-ca.057da92f20b2de891a30.webp" alt="hatchback" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="MuiBox-root css-d47f85">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-free-mode mySwiper swiper-backface-hidden">
+                      <div class="swiper-wrapper" style="transform:translate3d(0,0,0)">
+                        <div class="swiper-slide swiper-slide-active" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Convertible</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Convertible-car.55f2b2cb8f787b0d018b.webp" alt="Convertible" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">coube</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/coube-car.b67ec75e36308bb4b992.webp" alt="coube" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Minivan</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Minivan-car_27_11zon.8c93730a89b51d682fc4.webp" alt="Minivan" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Pickups</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Pickups-car_28_11zon.66a32ed6811f74062c0b.webp" alt="Pickups" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Sedan</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Sedan-car_30_11zon.8e4b873fd815649f758e.webp" alt="Sedan" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">Sport</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/Sport Cars_42_11zon.e3eeeccb4732f2dd5664.webp" alt="Sport" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">SUV</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/SUV-car_34_11zon.b0c8a30e836c8bd14db3.webp" alt="SUV" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                        <div class="swiper-slide" style="width:1.67772e+07px">
+                          <div class="MuiBox-root css-79elbk">
+                            <div class="MuiBox-root css-ci6o7">
+                              <p class="MuiTypography-root MuiTypography-body1 css-1nm7fz">hatchback</p>
+                              <div class="MuiBox-root css-0">
+                                <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textWarning MuiButton-sizeMedium MuiButton-textSizeMedium css-9t8obc" tabindex="0" type="button">
+                                  <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                    <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="DoubleArrowIcon" focusable="false" viewBox="0 0 24 24">
+                                      <path d="M15.5 5H11l5 7-5 7h4.5l5-7z"></path>
+                                      <path d="M8.5 5H4l5 7-5 7h4.5l5-7z"></path>
+                                    </svg>
+                                  </span>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </div>
+                            </div>
+                            <img src="/static/media/hatchback-ca.057da92f20b2de891a30.webp" alt="hatchback" width="100%" loading="lazy">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div class="MuiBox-root css-1fgzntz">
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                      <div class="MuiGrid-root MuiGrid-container css-1d3bbye">
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                          <div class="MuiBox-root css-xi606m">
+                            <h1 class="MuiTypography-root MuiTypography-h1 css-17bhtvq">Mettiti in contatto</h1>
+                            <h6 class="MuiTypography-root MuiTypography-h6 css-1x72f9m">Contatta il nostro Ufficio Commerciale</h6>
+                            <a href="tel:+00393779452678" style="color:coral;font-size:25px">(+0039) 3779452678</a>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Lunedi</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Martedì</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Mercoledì</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Giovedì</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Venerdì</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Sabato</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">9:00-19:00</p>
+                            </div>
+                            <div class="MuiBox-root css-1w5uzzb">
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">Domenica</p>
+                              <p class="MuiTypography-root MuiTypography-body1 css-7eocr7">CHIUSO</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-iol86l">
+                          <span class="" style="display:inline-block"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div class="MuiBox-root css-0">
+                  <footer style="background-color:#212529">
+                    <div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2">
+                      <div class="MuiBox-root css-0">
+                        <div class="socialMedia MuiBox-root css-0">
+                          <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-isbt42">
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-3zx7e6">
+                              <a href="https://web.facebook.com/profile.php?id=100094130145666&is_tour_completed=true" class="socialMedia MuiBox-root css-14ab577">
+                                <p class="MuiTypography-root MuiTypography-body2 css-97wskt">FACEBOOK</p>
+                                <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" type="button" aria-label="social-Media">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-76vxhq" data-testid="FacebookIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path>
+                                  </svg>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </a>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-3zx7e6">
+                              <a href="https://twitter.com/raysin_car_srls" class="socialMedia MuiBox-root css-1xpc82l">
+                                <p class="MuiTypography-root MuiTypography-body2 css-97wskt">TWITTER</p>
+                                <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" type="button" aria-label="social-Media">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-76vxhq" data-testid="TwitterIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path>
+                                  </svg>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </a>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-3zx7e6">
+                              <a href="https://www.instagram.com/raysin_car_srls/" class="socialMedia MuiBox-root css-1ithgen">
+                                <p class="MuiTypography-root MuiTypography-body2 css-97wskt">INSTAGRAM</p>
+                                <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" type="button" aria-label="social-Media">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-76vxhq" data-testid="InstagramIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                                  </svg>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </a>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-3 css-3zx7e6">
+                              <a href="https://wa.me/3779452678" class="socialMedia MuiBox-root css-104930h">
+                                <p class="MuiTypography-root MuiTypography-body2 css-97wskt">WhatsApp</p>
+                                <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1ja8xqi" tabindex="0" type="button" aria-label="social-Media">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-76vxhq" data-testid="WhatsAppIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                                  </svg>
+                                  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="MuiBox-root css-jn01mi">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-xgs5wp">
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-19egsyp">
+                            <div class="MuiBox-root css-70qvj9">
+                              <div class="MuiBox-root css-13tqxrv">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABBCAYAAABW168KAAAACXBIWXMAAC4jAAAuIwF4pT92AAAKmmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuYTg3MzFiOSwgMjAyMS8wOS8wOS0wMDozNzozOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wNi0wMlQxNzowMjoxNiswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M2UxMjBkN2ItODAxOS04ZTQzLWI0NzYtMDJiYmUwZjRiNTk4IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MGY5Nzc1ZjctZmExYy0xYTQ2LWI0ZDItYTQzMzM0Njk2ZjY2IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YjQ3Nzk5NTctYzQ4My01NTRmLThiMjgtMGMwYTU1MWM0OGM5IiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSIzMDAwMDAwLzEwMDAwIiB0aWZmOllSZXNvbHV0aW9uPSIzMDAwMDAwLzEwMDAwIiB0aWZmOlJlc29sdXRpb25Vbml0PSIyIiBleGlmOkNvbG9yU3BhY2U9IjEiIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSIxNjAiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSI2NSI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjQ3Nzk5NTctYzQ4My01NTRmLThiMjgtMGMwYTU1MWM0OGM5IiBzdEV2dDp3aGVuPSIyMDIzLTA2LTAyVDE3OjAyOjE2KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMCAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjhlNjRmNDg5LWI3MmMtZGQ0My1hOThlLTM5OTNiODM5MDFhMiIgc3RFdnQ6d2hlbj0iMjAyMy0wNi0wMlQxNzoxMToyMiswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjAgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzc1NWI0Zi0wZGRhLTQxNGMtYjExNy03YTgzMzdhZGM4YmIiIHN0RXZ0OndoZW49IjIwMjMtMDYtMDJUMTc6MTI6MTMrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6M2UxMjBkN2ItODAxOS04ZTQzLWI0NzYtMDJiYmUwZjRiNTk4IiBzdEV2dDp3aGVuPSIyMDIzLTA2LTAyVDE3OjEyOjEzKzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjIzNzU1YjRmLTBkZGEtNDE0Yy1iMTE3LTdhODMzN2FkYzhiYiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM5OGI1ZDZkLTQyNzQtNjM0OC05MzI3LWEwMjIyYTg4ZTRlMiIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmI0Nzc5OTU3LWM0ODMtNTU0Zi04YjI4LTBj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" alt="raysin car logo" width="auto" height="auto" style="margin-top:5px">
+                              </div>
+                              <p class="MuiTypography-root MuiTypography-body1 css-8qprv6">//</p>
+                              <a href="/" class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-b5yayz">Raysin Car Srls</a>
+                            </div>
+                            <p class="MuiTypography-root MuiTypography-body2 css-9ahrjj">Il nostro team è sempre a tua disposizione. Scrivici o lascia i tuoi recapiti e ti ricontatteremo.</p>
+                            <div class="MuiBox-root css-0">
+                              <a href="tel:+00393779452678" class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-lvhlbx" tabindex="0">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="PhoneIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                                  </svg>
+                                </span>(+0039)3779452678 <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </a>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <a href="mailto:support@raysinsrls.com" class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-lvhlbx" tabindex="0">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="EmailIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+                                  </svg>
+                                </span>support@raysinsrls.com <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </a>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <a href="https://www.google.com/maps?ll=41.873017,12.579624&z=17&t=m&hl=en&gl=EG&mapclient=embed&q=Viale+della+Bella+Villa+Roma+RM+Italy" class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-lvhlbx" tabindex="0">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="LocationOnIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                                  </svg>
+                                </span>VIALE DELLA BELLA VILLA 68 ROMA Cap 00172 <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-1ha4th6">
+                            <h6 class="MuiTypography-root MuiTypography-h6 css-vvgkjq">link utili</h6>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>
+                                <div class="MuiBox-root css-0">principale</div>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>
+                                <div class="MuiBox-root css-0">chi siamo</div>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>
+                                <div class="MuiBox-root css-0">Servizi</div>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>
+                                <div class="MuiBox-root css-0">Cerca un'auto</div>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>
+                                <div class="MuiBox-root css-0">chiamaci</div>
+                                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 css-1ha4th6">
+                            <h6 class="MuiTypography-root MuiTypography-h6 css-vvgkjq">I migliori modelli</h6>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>OPEL ASTRA <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>MERCEDES CLASSE C <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>BMW SERIE 3 <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>VOLKSWAGEN GOLF <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2 css-r7calx">
+                            <h6 class="MuiTypography-root MuiTypography-h6 css-vvgkjq">Circa la società</h6>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>chi siamo <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                            <div class="MuiBox-root css-0">
+                              <button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-io8l4v" tabindex="0" type="button">
+                                <span class="MuiButton-startIcon MuiButton-iconSizeMedium css-6xugel">
+                                  <svg aria-hidden="true" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" data-testid="KeyboardDoubleArrowRightIcon" focusable="false" viewBox="0 0 24 24">
+                                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                                  </svg>
+                                </span>chiamaci <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="MuiTypography-root MuiTypography-body2 css-rwm2fd">©Copyright 2023 RaYSIN CAR SRLS Developed by mahmoud elsawah</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+    </div>
+    <script type="text/javascript">
+      /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ ! function(e) {
+        "use strict";
+        var n = function(n, t, o) {
+          function i(e) {
+            if (a.body) return e();
+            setTimeout(function() {
+              i(e)
+            })
+          }
+
+          function r() {
+            l.addEventListener && l.removeEventListener("load", r), l.media = o || "all"
+          }
+          var d, a = e.document,
+            l = a.createElement("link");
+          if (t) d = t;
+          else {
+            var f = (a.body || a.getElementsByTagName("head")[0]).childNodes;
+            d = f[f.length - 1]
+          }
+          var s = a.styleSheets;
+          l.rel = "stylesheet", l.href = n, l.media = "only x", i(function() {
+            d.parentNode.insertBefore(l, t ? d : d.nextSibling)
+          });
+          var u = function(e) {
+            for (var n = l.href, t = s.length; t--;)
+              if (s[t].href === n) return e();
+            setTimeout(function() {
+              u(e)
+            })
+          };
+          return l.addEventListener && l.addEventListener("load", r), l.onloadcssdefined = u, u(r), l
+        };
+        "undefined" != typeof exports ? exports.loadCSS = n : e.loadCSS = n
+      }("undefined" != typeof global ? global : this);
+      /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+      ! function(t) {
+        if (t.loadCSS) {
+          var e = loadCSS.relpreload = {};
+          if (e.support = function() {
+              try {
+                return t.document.createElement("link").relList.supports("preload")
+              } catch (t) {
+                return !1
+              }
+            }, e.poly = function() {
+              for (var e = t.document.getElementsByTagName("link"), r = 0; r < e.length; r++) {
+                var n = e[r];
+                "preload" === n.rel && "style" === n.getAttribute("as") && (t.loadCSS(n.href, n, n.getAttribute("media")), n.rel = null)
+              }
+            }, !e.support()) {
+            e.poly();
+            var r = t.setInterval(e.poly, 300);
+            t.addEventListener && t.addEventListener("load", function() {
+              e.poly(), t.clearInterval(r)
+            }), t.attachEvent && t.attachEvent("onload", function() {
+              t.clearInterval(r)
+            })
+          }
+        }
+      }(this);
+    </script>
+    <script src="/LoadingPage.js"></script>
+
+  </body>
+</html>
